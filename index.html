@@ -438,25 +438,25 @@
         <div class="contact-content">
           <p class="section-eyebrow">Contacto</p>
           <h2>Hablemos de tu proyecto.</h2>
-          <form class="contact-form" action="mailto:contacto@gruposegel.com" method="post" enctype="text/plain" data-contact-form>
+          <form class="contact-form" action="send-form.php" method="POST" data-contact-form>
             <label class="contact-field">
               <span>Nombre <em>*</em></span>
-              <input type="text" name="nombre" autocomplete="name" required>
+              <input type="text" name="name" autocomplete="name" required>
             </label>
 
             <label class="contact-field">
               <span>Correo electrónico <em>*</em></span>
-              <input type="email" name="correo" autocomplete="email" required>
+              <input type="email" name="email" autocomplete="email" required>
             </label>
 
             <label class="contact-field">
               <span>Teléfono <em>*</em></span>
-              <input type="tel" name="telefono" autocomplete="tel" required>
+              <input type="tel" name="phone" autocomplete="tel" required>
             </label>
 
             <label class="contact-field contact-field--message">
               <span>Mensaje <em>*</em></span>
-              <textarea name="mensaje" rows="3" required></textarea>
+              <textarea name="message" rows="3" required></textarea>
             </label>
 
             <button class="contact-submit" type="submit">Enviar</button>

@@ -1076,41 +1076,45 @@ projectFilterButtons.forEach((button) => {
   });
 });
 
-// Contact form: static fallback opens the user's mail client with the form content.
+// Contact form: sends the lead through the cPanel PHP endpoint.
 const contactForm = document.querySelector('[data-contact-form]');
 const contactStatus = document.querySelector('[data-contact-status]');
 
-contactForm?.addEventListener('submit', (event) => {
+contactForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
 
-  const formData = new FormData(contactForm);
-  const name = String(formData.get('nombre') || '').trim();
-  const email = String(formData.get('correo') || '').trim();
-  const phone = String(formData.get('telefono') || '').trim();
-  const message = String(formData.get('mensaje') || '').trim();
-
-  if (!name || !email || !phone || !message || !contactForm.checkValidity()) {
+  if (!contactForm.checkValidity()) {
     if (contactStatus) contactStatus.textContent = 'Completa todos los campos requeridos.';
     contactForm.reportValidity();
     return;
   }
 
-  const subject = `Nuevo proyecto Casa Glick - ${name || 'Contacto web'}`;
-  const body = [
-    'Hola Casa Glick,',
-    '',
-    'Me gustaría compartir la información de mi proyecto:',
-    '',
-    `Nombre: ${name}`,
-    `Correo: ${email}`,
-    `Teléfono: ${phone}`,
-    '',
-    'Mensaje:',
-    message,
-  ].join('\n');
+  const submitButton = contactForm.querySelector('[type="submit"]');
+  const formData = new FormData(contactForm);
 
-  if (contactStatus) contactStatus.textContent = 'Preparando tu mensaje...';
-  window.location.href = `mailto:contacto@gruposegel.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  if (contactStatus) contactStatus.textContent = 'Enviando mensaje...';
+  if (submitButton) submitButton.disabled = true;
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    const payload = await response.json().catch(() => ({}));
+
+    if (!response.ok || !payload.ok) {
+      throw new Error(payload.message || 'No se pudo enviar el mensaje. Intenta de nuevo.');
+    }
+
+    contactForm.reset();
+    if (contactStatus) contactStatus.textContent = 'Gracias. Recibimos tu mensaje y te contactaremos pronto.';
+  } catch (error) {
+    if (contactStatus) contactStatus.textContent = error.message || 'No se pudo enviar el mensaje. Intenta de nuevo.';
+  } finally {
+    if (submitButton) submitButton.disabled = false;
+  }
 });
 
 
