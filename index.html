@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casa Glick | Interiorismo Integral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Casa Glick inicio">
+      <img src="assets/images/logo-casa-glick.png" alt="Casa Glick" />
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="fullscreen-menu" aria-hidden="true" aria-label="Navegación principal">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#soluciones">Soluciones</a>
+    <a href="#marcas">Marcas</a>
+    <a href="#catalogos">Catálogos</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#sectores">Sectores</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main class="site-main">
+    <section class="hero-slider" aria-label="Casa Glick interiorismo integral">
+      <article class="hero-slide hero-slide--01 is-active">
+        <div class="hero-content">
+          <div class="hero-dots" aria-label="Indicadores del hero">
+            <button class="is-active" type="button" aria-label="Ver slide 1"></button>
+            <button type="button" aria-label="Ver slide 2"></button>
+          </div>
+
+          <p class="eyebrow">Interiorismo Integral</p>
+          <h1>Todo tu proyecto,<br>Un solo equipo.</h1>
+          <p class="hero-description">
+            Desde cocinas y carpinterías, hasta superficies, mobiliario y acabados.
+            Coordinamos cada etapa para transformar espacios residenciales, comerciales y de hospitalidad.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+            <a class="btn btn-secondary" href="#showrooms">Visitar showroom</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hero-slide hero-slide--02">
+        <div class="hero-content">
+          <div class="hero-dots" aria-label="Indicadores del hero">
+            <button type="button" aria-label="Ver slide 1"></button>
+            <button class="is-active" type="button" aria-label="Ver slide 2"></button>
+          </div>
+
+          <p class="eyebrow">Marcas y Showrooms</p>
+          <h1>Más allá,<br>de las tendencias.</h1>
+          <p class="hero-description hero-description--showroom">
+            Descubre una selección curada de marcas y acabados.<br>
+            Soluciones premium para proyectos residenciales<br>
+            y comerciales de alto nivel.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#showrooms">Visitar showroom</a>
+            <a class="btn btn-secondary" href="#contacto">Contacto</a>
+          </div>
+        </div>
+      </article>
+
+
+    </section>
+
+    <section class="about-section reveal-on-scroll" id="nosotros" aria-label="Nosotros">
+      <div class="about-media">
+        <img src="assets/images/about-integral.webp" alt="Mesa de trabajo con planos, muestras de materiales y selección de acabados Casa Glick">
+      </div>
+
+      <div class="about-copy">
+        <p class="section-eyebrow">Nosotros</p>
+        <h2>Una visión integral para<br>cada proyecto.</h2>
+
+        <div class="about-text">
+          <p>
+            Integramos diseño, fabricación, suministro e instalación para desarrollar espacios donde cada detalle responde a una misma visión.
+          </p>
+          <p>
+            Un solo equipo coordinando cada etapa para lograr resultados consistentes y una ejecución impecable.
+          </p>
+        </div>
+
+        <button class="text-link about-open" type="button" data-about-modal-open>
+          Descubre nuestro enfoque
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="solutions-section reveal-on-scroll" id="soluciones" aria-label="Soluciones">
+      <div class="solutions-intro">
+        <p class="section-eyebrow">Soluciones</p>
+        <h2>Diseñamos espacios para<br>cada necesidad.</h2>
+        <p>
+          Desarrollamos proyectos residenciales, comerciales y de hospitalidad con una visión integral:<br>
+          diseño, fabricación, suministro e instalación coordinados por un solo equipo.
+        </p>
+      </div>
+
+      <div class="solutions-grid">
+        <article class="solution-card">
+          <img src="assets/images/solution-hospitality.webp" alt="Lobby de hospitalidad con iluminación arquitectónica, mobiliario premium y acabados en piedra">
+          <div class="solution-card__overlay"></div>
+          <div class="solution-card__content">
+            <h3>Hospitality</h3>
+            <p>
+              Diseñamos y ejecutamos espacios comerciales y hoteleros con precisión, eficiencia operativa,
+              estética consistente y soluciones integrales para proyectos exigentes.
+            </p>
+            <button class="solution-link solution-open" type="button" data-solution-modal-open="hospitality">Conocer solución <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+
+        <article class="solution-card">
+          <img src="assets/images/solution-residencial.webp" alt="Residencia contemporánea con sala, cocina integrada, carpintería cálida y ventanales al jardín">
+          <div class="solution-card__overlay"></div>
+          <div class="solution-card__content">
+            <h3>Residencial</h3>
+            <p>
+              Creamos hogares funcionales y elegantes mediante mobiliario a medida, optimización de espacios,
+              confort, durabilidad y acabados de alta calidad personalizada.
+            </p>
+            <button class="solution-link solution-open" type="button" data-solution-modal-open="residencial">Conocer solución <span aria-hidden="true">→</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brands-section reveal-on-scroll" id="marcas" aria-label="Marcas Casa Glick">
+      <div class="brands-shell">
+        <div class="brands-intro">
+          <p class="section-eyebrow">Marcas</p>
+          <h2>Una visión.<br>Múltiples especialidades.</h2>
+          <p>
+            Cuatro marcas. Una misma filosofía: excelencia en cada detalle para crear espacios excepcionales.
+          </p>
+        </div>
+
+        <div class="brands-showcase" data-brands-carousel>
+          <button class="brands-edge brands-edge--left" type="button" aria-label="Desplazar marcas hacia la izquierda" data-brands-edge="left"></button>
+
+          <div class="brands-track" tabindex="0" aria-label="Carrusel de marcas Casa Glick">
+            <a class="brand-card brand-card--nautica" href="brand.html?brand=nautica" data-brand="nautica" aria-label="Ver marca Nautica Home">
+              <img class="brand-card__image" src="assets/images/brand-nautica.webp" alt="Sala residencial con mobiliario Nautica Home">
+              <div class="brand-card__shade"></div>
+              <div class="brand-card__content">
+                <img class="brand-card__logo brand-card__logo--nautica" src="assets/logos/nautica.svg" alt="Nautica Home">
+              </div>
+            </a>
+
+            <a class="brand-card brand-card--hacker" href="brand.html?brand=hacker" data-brand="hacker" aria-label="Ver marca Häcker">
+              <img class="brand-card__image" src="assets/images/brand-hacker.webp" alt="Cocina minimalista con mobiliario de diseño Hacker">
+              <div class="brand-card__shade"></div>
+              <div class="brand-card__content">
+                <img class="brand-card__logo brand-card__logo--hacker" src="assets/logos/hacker.svg" alt="Häcker">
+              </div>
+            </a>
+
+            <a class="brand-card brand-card--emerald" href="brand.html?brand=emerald" data-brand="emerald" aria-label="Ver marca Emerald">
+              <img class="brand-card__image" src="assets/images/brand-emerald.webp" alt="Walk in closet contemporáneo con acabados premium Emerald">
+              <div class="brand-card__shade"></div>
+              <div class="brand-card__content">
+                <img class="brand-card__logo brand-card__logo--emerald" src="assets/logos/emerald.svg" alt="Emerald">
+              </div>
+            </a>
+
+            <a class="brand-card brand-card--cg" href="brand.html?brand=cg" data-brand="cg" aria-label="Ver marca CG Furniture">
+              <img class="brand-card__image" src="assets/images/brand-cg-furniture.webp" alt="Recámara contemporánea con mobiliario a medida CG Furniture">
+              <div class="brand-card__shade"></div>
+              <div class="brand-card__content">
+                <img class="brand-card__logo brand-card__logo--cg" src="assets/logos/cg-furniture.svg" alt="CG Furniture">
+              </div>
+            </a>
+          </div>
+
+          <button class="brands-edge brands-edge--right" type="button" aria-label="Desplazar marcas hacia la derecha" data-brands-edge="right"></button>
+        </div>
+
+        <div class="brands-mobile-indicators" data-brands-indicators aria-label="Indicador de marcas">
+          <button class="is-active" type="button" aria-label="Ver marca 1"></button>
+          <button type="button" aria-label="Ver marca 2"></button>
+          <button type="button" aria-label="Ver marca 3"></button>
+          <button type="button" aria-label="Ver marca 4"></button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="catalogs-section reveal-on-scroll" id="catalogos" aria-label="Catálogos Casa Glick">
+      <div class="catalogs-shell">
+        <div class="catalogs-copy">
+          <p class="section-eyebrow">Catálogos</p>
+          <h2>Explora nuestras colecciones</h2>
+          <p>
+            Seleccionamos los mejores productos para inspirar tus proyectos.
+          </p>
+        </div>
+
+        <a class="catalog-feature" href="assets/catalogs/cg-coleccion-2026/cg-coleccion-2026.pdf" aria-label="Abrir visor de CG Colección 2026" data-catalog-open="cg-coleccion-2026">
+          <figure class="catalog-feature__cover">
+            <img src="assets/catalogs/cg-coleccion-2026/pages/page-01.jpg" alt="Portada del catálogo CG Colección 2026">
+            <figcaption>Casa Glick</figcaption>
+          </figure>
+          <p>CG Colección 2026</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="projects-section reveal-on-scroll" id="proyectos" aria-label="Proyectos Casa Glick">
+      <div class="projects-intro">
+        <p class="section-eyebrow">Proyectos</p>
+        <h2>Diseñados para ser vividos.</h2>
+        <p>
+          Una selección de proyectos residenciales, comerciales y de hospitalidad desarrollados bajo una visión integral de diseño y ejecución.
+        </p>
+
+        <div class="projects-filters" aria-label="Filtrar proyectos">
+          <button class="is-active" type="button" data-project-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" data-project-filter="residencial" aria-pressed="false">Residencial</button>
+          <button type="button" data-project-filter="hospitality" aria-pressed="false">Hospitality</button>
+        </div>
+      </div>
+
+      <div class="projects-showcase" data-projects-carousel>
+        <div class="projects-track" aria-label="Carrusel de proyectos Casa Glick">
+        <article class="project-card" data-project-category="residencial" data-project="casa-nautica">
+          <a href="#proyectos" aria-label="Ver proyecto Casa Náutica">
+            <figure class="project-card__media">
+              <img src="assets/images/solution-residencial.webp" alt="Residencia contemporánea desarrollada por Casa Glick">
+            </figure>
+            <div class="project-card__content">
+              <p>Residencial</p>
+              <h3>Casa Náutica</h3>
+              <span>Mérida, Yucatán</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-project-category="hospitality" data-project="torre-habitat">
+          <a href="#proyectos" aria-label="Ver proyecto Torre Habitat">
+            <figure class="project-card__media">
+              <img src="assets/images/solution-hospitality.webp" alt="Lobby de hospitalidad con acabados premium Casa Glick">
+            </figure>
+            <div class="project-card__content">
+              <p>Hospitality</p>
+              <h3>Torre Habitat</h3>
+              <span>Cancún, Quintana Roo</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-project-category="residencial" data-project="emerald-residence">
+          <a href="#proyectos" aria-label="Ver proyecto Emerald Residence">
+            <figure class="project-card__media">
+              <img src="assets/images/hero-03-exterior.webp" alt="Exterior residencial contemporáneo con arquitectura Casa Glick">
+            </figure>
+            <div class="project-card__content">
+              <p>Residencial</p>
+              <h3>Emerald Residence</h3>
+              <span>Ciudad de México</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-project-category="hospitality" data-project="glick-lounge">
+          <a href="#proyectos" aria-label="Ver proyecto Glick Lounge">
+            <figure class="project-card__media">
+              <img src="assets/images/hero-02-showroom.webp" alt="Showroom y lounge interior desarrollado por Casa Glick">
+            </figure>
+            <div class="project-card__content">
+              <p>Hospitality</p>
+              <h3>Glick Lounge</h3>
+              <span>Mérida, Yucatán</span>
+            </div>
+          </a>
+        </article>
+        </div>
+        <button class="projects-edge projects-edge--left" type="button" data-projects-edge="left" aria-label="Desplazar proyectos hacia la izquierda"></button>
+        <button class="projects-edge projects-edge--right" type="button" data-projects-edge="right" aria-label="Desplazar proyectos hacia la derecha"></button>
+      </div>
+    </section>
+
+    <section class="showroom-section reveal-on-scroll" id="showrooms" aria-label="Showroom Casa Glick">
+      <div class="showroom-shell">
+        <div class="showroom-intro">
+          <p class="section-eyebrow">Showroom</p>
+          <h2>Conoce nuestro showroom.</h2>
+          <p>
+            Te invitamos a vivir la experiencia Casa Glick en persona. Explora materiales, firmas y soluciones de diseño seleccionadas para inspirar tus espacios.
+          </p>
+
+          <div class="showroom-location" aria-label="Ubicación del showroom Casa Glick">
+            <span class="showroom-location__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </span>
+            <span>Témisticles 51, Polanco, CDMX</span>
+          </div>
+        </div>
+
+        <div class="showroom-carousel" aria-label="Galería del showroom Casa Glick" data-showroom-carousel>
+          <div class="showroom-track">
+            <div class="showroom-track__group">
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/hero-02-showroom.webp" aria-label="Abrir imagen del showroom Casa Glick">
+              <img src="assets/images/hero-02-showroom.webp" alt="Interior del showroom Casa Glick con acabados y mobiliario premium">
+            </button>
+            <button class="showroom-gallery__item showroom-gallery__item--materials" type="button" data-showroom-image="assets/images/contact-design-worktable.png" aria-label="Abrir imagen de muestras y materiales Casa Glick">
+              <img src="assets/images/contact-design-worktable.png" alt="Muestras de materiales, acabados y planos de diseño en Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/solution-residencial.webp" aria-label="Abrir imagen de ambiente residencial Casa Glick">
+              <img src="assets/images/solution-residencial.webp" alt="Ambiente residencial premium con soluciones de diseño Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/brand-hacker.webp" aria-label="Abrir imagen de cocina premium Casa Glick">
+              <img src="assets/images/brand-hacker.webp" alt="Cocina premium con acabados contemporáneos disponible en el showroom Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/brand-nautica.webp" aria-label="Abrir imagen de mobiliario y decoración Casa Glick">
+              <img src="assets/images/brand-nautica.webp" alt="Mobiliario, decoración y soluciones de interiorismo en Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/about-integral.webp" aria-label="Abrir imagen de detalle arquitectónico Casa Glick">
+              <img src="assets/images/about-integral.webp" alt="Detalle arquitectónico con materiales premium de Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/solution-hospitality.webp" aria-label="Abrir imagen de ambiente hospitality Casa Glick">
+              <img src="assets/images/solution-hospitality.webp" alt="Ambiente hospitality diseñado con soluciones integrales Casa Glick">
+            </button>
+            </div>
+            <div class="showroom-track__group" aria-hidden="true">
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/hero-02-showroom.webp" aria-label="Abrir imagen del showroom Casa Glick">
+              <img src="assets/images/hero-02-showroom.webp" alt="Interior del showroom Casa Glick con acabados y mobiliario premium">
+            </button>
+            <button class="showroom-gallery__item showroom-gallery__item--materials" type="button" data-showroom-image="assets/images/contact-design-worktable.png" aria-label="Abrir imagen de muestras y materiales Casa Glick">
+              <img src="assets/images/contact-design-worktable.png" alt="Muestras de materiales, acabados y planos de diseño en Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/solution-residencial.webp" aria-label="Abrir imagen de ambiente residencial Casa Glick">
+              <img src="assets/images/solution-residencial.webp" alt="Ambiente residencial premium con soluciones de diseño Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/brand-hacker.webp" aria-label="Abrir imagen de cocina premium Casa Glick">
+              <img src="assets/images/brand-hacker.webp" alt="Cocina premium con acabados contemporáneos disponible en el showroom Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/brand-nautica.webp" aria-label="Abrir imagen de mobiliario y decoración Casa Glick">
+              <img src="assets/images/brand-nautica.webp" alt="Mobiliario, decoración y soluciones de interiorismo en Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/about-integral.webp" aria-label="Abrir imagen de detalle arquitectónico Casa Glick">
+              <img src="assets/images/about-integral.webp" alt="Detalle arquitectónico con materiales premium de Casa Glick">
+            </button>
+            <button class="showroom-gallery__item" type="button" data-showroom-image="assets/images/solution-hospitality.webp" aria-label="Abrir imagen de ambiente hospitality Casa Glick">
+              <img src="assets/images/solution-hospitality.webp" alt="Ambiente hospitality diseñado con soluciones integrales Casa Glick">
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <a class="showroom-cta" href="#" data-showroom-whatsapp>Visitar showroom</a>
+      </div>
+
+      <div class="showroom-lightbox" data-showroom-lightbox aria-hidden="true">
+        <button class="showroom-lightbox__close" type="button" aria-label="Cerrar imagen del showroom" data-showroom-lightbox-close>×</button>
+        <button class="showroom-lightbox__nav showroom-lightbox__nav--prev" type="button" aria-label="Imagen anterior" data-showroom-lightbox-prev>‹</button>
+        <img src="" alt="Imagen ampliada del showroom Casa Glick" data-showroom-lightbox-image>
+        <button class="showroom-lightbox__nav showroom-lightbox__nav--next" type="button" aria-label="Imagen siguiente" data-showroom-lightbox-next>›</button>
+      </div>
+      </div>
+    </section>
+
+
+    <section class="sectors-section reveal-on-scroll" id="sectores" aria-label="Sectores Casa Glick">
+      <div class="sectors-shell">
+        <div class="sectors-intro">
+          <p class="section-eyebrow">Nuestros alcances</p>
+          <h2>Experiencia que se<br>traduce en resultados.</h2>
+          <p>
+            Hemos desarrollado proyectos en una amplia variedad de sectores, cumpliendo con los más altos estándares de diseño, calidad y ejecución.
+          </p>
+        </div>
+
+        <div class="sectors-list" aria-label="Lista de sectores">
+          <a class="sector-item" href="#sectores" aria-label="Ver sector residencial" data-sector="residencial">
+            <span class="sector-item__icon" aria-hidden="true"><svg class="lucide lucide-house" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-7 9 7"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 21V12h6v9"/></svg></span>
+            <span class="sector-item__body">
+              <span class="sector-item__title">Residencial</span>
+              <span class="sector-item__description">Espacios habitacionales diseñados para elevar la vida diaria con funcionalidad, confort y carácter.</span>
+            </span>
+            <span class="sector-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="sector-item" href="#sectores" aria-label="Ver sector hospitality" data-sector="hospitality">
+            <span class="sector-item__icon" aria-hidden="true"><svg class="lucide lucide-bed-double" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></svg></span>
+            <span class="sector-item__body">
+              <span class="sector-item__title">Hospitality</span>
+              <span class="sector-item__description">Soluciones para hoteles, desarrollos y espacios de hospitalidad con una ejecución integral.</span>
+            </span>
+            <span class="sector-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="sector-item" href="#sectores" aria-label="Ver sector comercial" data-sector="comercial">
+            <span class="sector-item__icon" aria-hidden="true"><svg class="lucide lucide-store" viewBox="0 0 24 24" aria-hidden="true"><path d="m2 7 4.4-4.4A2 2 0 0 1 7.8 2h8.4a2 2 0 0 1 1.4.6L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-6a3 3 0 0 0-6 0v6"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-4 0 2 2 0 0 1-4 0 2 2 0 0 1-4 0 2 2 0 0 1-4 0 2 2 0 0 1-4 0V7"/></svg></span>
+            <span class="sector-item__body">
+              <span class="sector-item__title">Comercial</span>
+              <span class="sector-item__description">Ambientes pensados para marcas, operación y experiencia de usuario en cada punto de contacto.</span>
+            </span>
+            <span class="sector-item__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="sector-item" href="#sectores" aria-label="Ver sector corporativo" data-sector="corporativo">
+            <span class="sector-item__icon" aria-hidden="true"><svg class="lucide lucide-building-2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/><path d="M6 12H4a2 2 0 0 0-2 2v8h20v-8a2 2 0 0 0-2-2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span>
+            <span class="sector-item__body">
+              <span class="sector-item__title">Corporativo</span>
+              <span class="sector-item__description">Interiores profesionales que combinan imagen, eficiencia y soluciones a medida para equipos de trabajo.</span>
+            </span>
+            <span class="sector-item__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section reveal-on-scroll" id="contacto" aria-label="Contacto Casa Glick">
+      <div class="contact-shell">
+        <div class="contact-content">
+          <p class="section-eyebrow">Contacto</p>
+          <h2>Hablemos de tu proyecto.</h2>
+          <form class="contact-form" action="mailto:contacto@gruposegel.com" method="post" enctype="text/plain" data-contact-form>
+            <label class="contact-field">
+              <span>Nombre <em>*</em></span>
+              <input type="text" name="nombre" autocomplete="name" required>
+            </label>
+
+            <label class="contact-field">
+              <span>Correo electrónico <em>*</em></span>
+              <input type="email" name="correo" autocomplete="email" required>
+            </label>
+
+            <label class="contact-field">
+              <span>Teléfono <em>*</em></span>
+              <input type="tel" name="telefono" autocomplete="tel" required>
+            </label>
+
+            <label class="contact-field contact-field--message">
+              <span>Mensaje <em>*</em></span>
+              <textarea name="mensaje" rows="3" required></textarea>
+            </label>
+
+            <button class="contact-submit" type="submit">Enviar</button>
+            <p class="contact-status" data-contact-status aria-live="polite"></p>
+          </form>
+
+        </div>
+        <figure class="contact-visual" aria-hidden="true">
+          <img src="assets/images/contact-design-worktable.png" alt="">
+        </figure>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer" aria-label="Footer Casa Glick">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="#" aria-label="Casa Glick inicio"><img src="assets/images/logo-casa-glick.png" alt="Casa Glick" /></a>
+          <address class="site-footer__contact">
+            <a href="tel:+525513004665">+52 (55) 1300 4665</a>
+            <a href="mailto:contacto@gruposegel.com">contacto@gruposegel.com</a>
+            <span>Témisticles 51, Polanco, CDMX</span>
+          </address>
+        </div>
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© Copyright 2026, Casa Glick. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <div class="brand-modal" data-brand-modal aria-hidden="true">
+    <div class="brand-modal__backdrop" data-brand-modal-close></div>
+    <article class="brand-modal__panel" role="dialog" aria-modal="true" aria-labelledby="brand-modal-title">
+      <button class="brand-modal__close" type="button" aria-label="Cerrar" data-brand-modal-close>×</button>
+
+      <section class="brand-modal__hero">
+        <img class="brand-modal__logo" data-modal-logo src="assets/logos/hacker.svg" alt="">
+        <span class="brand-modal__rule" aria-hidden="true"></span>
+        <h2 id="brand-modal-title" class="brand-modal__headline" data-modal-headline></h2>
+        <p class="brand-modal__description" data-modal-description></p>
+        <a class="btn btn-primary brand-modal__website" data-modal-website href="#" target="_blank" rel="noopener">Visitar web</a>
+      </section>
+
+      <section class="brand-modal__gallery" aria-label="Imágenes lifestyle de marca">
+        <figure class="brand-modal__image brand-modal__image--large">
+          <img data-modal-image="0" src="assets/images/brand-hacker.webp" alt="">
+        </figure>
+        <figure class="brand-modal__image brand-modal__image--wide">
+          <img data-modal-image="1" src="assets/images/brand-hacker.webp" alt="">
+        </figure>
+        <figure class="brand-modal__image">
+          <img data-modal-image="2" src="assets/images/brand-hacker.webp" alt="">
+        </figure>
+        <figure class="brand-modal__image">
+          <img data-modal-image="3" src="assets/images/brand-hacker.webp" alt="">
+        </figure>
+      </section>
+    </article>
+  </div>
+
+  <div class="project-modal" data-project-modal aria-hidden="true">
+    <div class="project-modal__backdrop" data-project-modal-close></div>
+    <article class="project-modal__panel" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <button class="project-modal__close" type="button" aria-label="Cerrar" data-project-modal-close>×</button>
+
+      <section class="project-modal__hero">
+        <p class="project-modal__eyebrow" data-project-modal-type></p>
+        <span class="project-modal__rule" aria-hidden="true"></span>
+        <h2 id="project-modal-title" class="project-modal__headline" data-project-modal-title></h2>
+        <p class="project-modal__location" data-project-modal-location></p>
+        <p class="project-modal__description" data-project-modal-description></p>
+        <a class="btn btn-primary project-modal__cta" href="#contacto" data-project-modal-cta>Cotiza tu proyecto</a>
+      </section>
+
+      <section class="project-modal__gallery" data-project-modal-gallery aria-label="Galería de proyecto">
+        <figure class="project-modal__image project-modal__image--large">
+          <img data-project-modal-image="0" src="assets/images/solution-residencial.webp" alt="">
+        </figure>
+        <figure class="project-modal__image project-modal__image--wide">
+          <img data-project-modal-image="1" src="assets/images/hero-bg.webp" alt="">
+        </figure>
+        <figure class="project-modal__image">
+          <img data-project-modal-image="2" src="assets/images/about-integral.webp" alt="">
+        </figure>
+        <figure class="project-modal__image">
+          <img data-project-modal-image="3" src="assets/images/brand-nautica.webp" alt="">
+        </figure>
+      </section>
+    </article>
+  </div>
+
+
+  <div class="project-modal solution-modal" data-solution-modal aria-hidden="true">
+    <div class="project-modal__backdrop" data-solution-modal-close></div>
+    <article class="project-modal__panel solution-modal__panel" role="dialog" aria-modal="true" aria-labelledby="solution-modal-title">
+      <button class="project-modal__close" type="button" aria-label="Cerrar" data-solution-modal-close>×</button>
+
+      <section class="about-modal__layout solution-modal__layout">
+        <aside class="about-modal__intro-panel solution-modal__intro-panel">
+          <p class="project-modal__eyebrow about-modal__eyebrow" data-solution-modal-type></p>
+          <span class="project-modal__rule about-modal__rule" aria-hidden="true"></span>
+          <h2 id="solution-modal-title" class="about-modal__title" data-solution-modal-title></h2>
+          <p class="about-modal__lead" data-solution-modal-lead></p>
+          <div class="solution-modal__ideal">
+            <p class="solution-modal__label">Ideal para</p>
+            <div class="about-modal__summary" data-solution-modal-tags aria-label="Proyectos ideales para esta solución"></div>
+          </div>
+          <a class="btn btn-primary about-modal__cta solution-modal__cta" href="#contacto" data-solution-modal-cta>HABLEMOS DE TU PROYECTO</a>
+        </aside>
+
+        <div class="about-modal__content solution-modal__content" aria-label="Detalle de la solución">
+          <article class="about-modal__item">
+            <span class="about-modal__number">01</span>
+            <div>
+              <h3 data-solution-modal-heading-one></h3>
+              <p data-solution-modal-copy-one></p>
+            </div>
+          </article>
+          <article class="about-modal__item">
+            <span class="about-modal__number">02</span>
+            <div>
+              <h3 data-solution-modal-heading-two></h3>
+              <p data-solution-modal-copy-two></p>
+            </div>
+          </article>
+          <article class="about-modal__item">
+            <span class="about-modal__number">03</span>
+            <div>
+              <h3 data-solution-modal-heading-three></h3>
+              <p data-solution-modal-copy-three></p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <div class="project-modal sector-modal" data-sector-modal aria-hidden="true">
+    <div class="project-modal__backdrop" data-sector-modal-close></div>
+    <article class="project-modal__panel" role="dialog" aria-modal="true" aria-labelledby="sector-modal-title">
+      <button class="project-modal__close" type="button" aria-label="Cerrar" data-sector-modal-close>×</button>
+
+      <section class="project-modal__hero">
+        <p class="project-modal__eyebrow" data-sector-modal-type></p>
+        <span class="project-modal__rule" aria-hidden="true"></span>
+        <h2 id="sector-modal-title" class="project-modal__headline" data-sector-modal-title></h2>
+        <p class="project-modal__description" data-sector-modal-description></p>
+        <div class="sector-modal__scope" aria-label="Alcances del sector">
+          <p class="sector-modal__scope-label">Alcances</p>
+          <ul class="sector-modal__scope-list" data-sector-modal-scope></ul>
+        </div>
+        <a class="btn btn-primary project-modal__cta" href="#contacto" data-sector-modal-cta>Cotiza tu proyecto</a>
+      </section>
+
+      <section class="project-modal__gallery" data-sector-modal-gallery aria-label="Galería de sector">
+        <figure class="project-modal__image project-modal__image--large">
+          <img data-sector-modal-image="0" src="assets/images/solution-residencial.webp" alt="">
+        </figure>
+        <figure class="project-modal__image project-modal__image--wide">
+          <img data-sector-modal-image="1" src="assets/images/hero-bg.webp" alt="">
+        </figure>
+        <figure class="project-modal__image">
+          <img data-sector-modal-image="2" src="assets/images/about-integral.webp" alt="">
+        </figure>
+        <figure class="project-modal__image">
+          <img data-sector-modal-image="3" src="assets/images/brand-nautica.webp" alt="">
+        </figure>
+      </section>
+    </article>
+  </div>
+
+  <div class="project-modal about-modal" data-about-modal aria-hidden="true">
+    <div class="project-modal__backdrop" data-about-modal-close></div>
+    <article class="project-modal__panel about-modal__panel" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+      <button class="project-modal__close" type="button" aria-label="Cerrar" data-about-modal-close>×</button>
+
+      <section class="about-modal__layout">
+        <aside class="about-modal__intro-panel">
+          <p class="project-modal__eyebrow about-modal__eyebrow">Nuestro enfoque</p>
+          <span class="project-modal__rule about-modal__rule" aria-hidden="true"></span>
+          <h2 id="about-modal-title" class="about-modal__title">Diseño, gestión y ejecución bajo una misma visión.</h2>
+          <p class="about-modal__lead">
+            Casa Glick acompaña proyectos de interiorismo con una estructura integral: entendemos la idea, curamos las soluciones y coordinamos cada etapa hasta convertirla en un espacio listo para vivirse.
+          </p>
+          <a class="btn btn-primary about-modal__cta" href="#contacto" data-about-modal-cta>Hablemos de tu proyecto</a>
+        </aside>
+
+        <div class="about-modal__content" aria-label="Información sobre Casa Glick">
+          <article class="about-modal__item">
+            <span class="about-modal__number">01</span>
+            <div>
+              <h3>Quiénes somos</h3>
+              <p>Somos un equipo que integra diseño, asesoría, marcas, materiales y soluciones constructivas para simplificar proyectos residenciales, comerciales y de hospitality.</p>
+            </div>
+          </article>
+          <article class="about-modal__item">
+            <span class="about-modal__number">02</span>
+            <div>
+              <h3>Nuestra historia</h3>
+              <p>Nacimos como una plataforma para reunir experiencia, proveedores y procesos en un solo lugar, acercando al cliente a una forma más clara y ordenada de desarrollar espacios.</p>
+            </div>
+          </article>
+          <article class="about-modal__item">
+            <span class="about-modal__number">03</span>
+            <div>
+              <h3>Misión</h3>
+              <p>Transformar ideas en espacios bien resueltos, cuidando la estética, la funcionalidad y la coordinación de cada decisión con precisión y sensibilidad por el detalle.</p>
+            </div>
+          </article>
+          <article class="about-modal__item">
+            <span class="about-modal__number">04</span>
+            <div>
+              <h3>Visión</h3>
+              <p>Ser el punto de encuentro para quienes buscan crear proyectos interiores con una experiencia confiable, curada y alineada a una visión contemporánea de diseño.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <div class="catalog-viewer" data-catalog-viewer aria-hidden="true">
+    <div class="catalog-viewer__backdrop" data-catalog-close></div>
+    <article class="catalog-viewer__panel" role="dialog" aria-modal="true" aria-labelledby="catalog-viewer-title">
+      <header class="catalog-viewer__header">
+        <div>
+          <p class="catalog-viewer__eyebrow">Catálogo digital</p>
+          <h2 id="catalog-viewer-title">CG Colección 2026</h2>
+        </div>
+        <div class="catalog-viewer__actions">
+          <button class="catalog-viewer__close" type="button" aria-label="Cerrar visor" data-catalog-close>×</button>
+        </div>
+      </header>
+
+      <div class="catalog-viewer__stage" data-catalog-stage>
+        <button class="catalog-viewer__nav catalog-viewer__nav--prev" type="button" aria-label="Página anterior" data-catalog-prev>‹</button>
+
+        <div class="catalog-book" data-catalog-book aria-live="polite">
+          <div class="catalog-book__cover" data-catalog-cover aria-hidden="true">
+            <img src="" alt="" data-catalog-cover-image>
+          </div>
+          <div class="catalog-pageflip" data-catalog-pageflip></div>
+          <div class="catalog-book__spread" data-catalog-spread>
+            <figure class="catalog-book__page catalog-book__page--left">
+              <img src="" alt="" data-catalog-page-left>
+            </figure>
+            <figure class="catalog-book__page catalog-book__page--right">
+              <img src="" alt="" data-catalog-page-right>
+            </figure>
+          </div>
+        </div>
+
+        <button class="catalog-viewer__nav catalog-viewer__nav--next" type="button" aria-label="Página siguiente" data-catalog-next>›</button>
+      </div>
+
+      <footer class="catalog-viewer__footer">
+        <span data-catalog-status>Página 1 de 60</span>
+      </footer>
+    </article>
+  </div>
+
+
+  <a class="whatsapp-float" href="https://wa.me/525513004665?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20Casa%20Glick%20y%20me%20gustar%C3%ADa%20hablar%20con%20un%20agente." target="_blank" rel="noopener" aria-label="Hablar con un agente por WhatsApp" data-whatsapp-button>
+    <svg class="whatsapp-float__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <path d="M16.02 4.5c-6.31 0-11.45 5.08-11.45 11.34 0 2.15.62 4.24 1.78 6.05L4.5 27.5l5.82-1.8a11.53 11.53 0 0 0 5.7 1.49c6.31 0 11.45-5.09 11.45-11.35S22.33 4.5 16.02 4.5Zm0 20.7c-1.8 0-3.55-.51-5.06-1.48l-.36-.23-3.05.94.97-2.94-.25-.38a9.18 9.18 0 0 1-1.72-5.27c0-5.16 4.25-9.35 9.47-9.35s9.47 4.19 9.47 9.35-4.25 9.36-9.47 9.36Z"/>
+      <path d="M20.94 18.31c-.27-.13-1.57-.77-1.82-.86-.24-.09-.42-.13-.6.13-.18.27-.69.86-.85 1.04-.16.18-.31.2-.58.07-.27-.13-1.12-.41-2.13-1.31-.79-.7-1.32-1.56-1.47-1.83-.16-.27-.02-.41.12-.54.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.43-.82-1.95-.22-.52-.44-.44-.6-.45h-.51c-.18 0-.47.07-.71.34-.24.27-.94.92-.94 2.24s.96 2.6 1.09 2.78c.13.18 1.89 2.86 4.59 4 .64.27 1.14.43 1.53.55.64.2 1.22.17 1.68.1.51-.08 1.57-.64 1.79-1.25.22-.62.22-1.15.16-1.25-.07-.11-.25-.18-.52-.31Z"/>
+    </svg>
+    <span>Hablar con un agente</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
