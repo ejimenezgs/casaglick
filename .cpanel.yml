@@ -1,0 +1,16 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gyu5la0fbzjq/public_html/casaglick.com
+
+    - /bin/rm -rf ${DEPLOYPATH}/assets
+    - /bin/rm -rf ${DEPLOYPATH}/css
+    - /bin/rm -rf ${DEPLOYPATH}/js
+
+    - /bin/cp -R assets ${DEPLOYPATH}
+    - /bin/cp -R css ${DEPLOYPATH}
+    - /bin/cp -R js ${DEPLOYPATH}
+
+    - /bin/cp index.html ${DEPLOYPATH}
+
+    - if [ -f brand.html ]; then /bin/cp brand.html ${DEPLOYPATH}; fi
