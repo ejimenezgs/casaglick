@@ -14,3 +14,4 @@ deployment:
     - /bin/cp index.html ${DEPLOYPATH}
 
     - if [ -f brand.html ]; then /bin/cp brand.html ${DEPLOYPATH}; fi
+    - if [ -f send-form.php ]; then /bin/cp send-form.php ${DEPLOYPATH}; fi
