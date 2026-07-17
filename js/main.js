@@ -1076,46 +1076,7 @@ projectFilterButtons.forEach((button) => {
   });
 });
 
-// Contact form: sends the lead through the cPanel PHP endpoint.
-const contactForm = document.querySelector('[data-contact-form]');
-const contactStatus = document.querySelector('[data-contact-status]');
-
-contactForm?.addEventListener('submit', async (event) => {
-  event.preventDefault();
-
-  if (!contactForm.checkValidity()) {
-    if (contactStatus) contactStatus.textContent = 'Completa todos los campos requeridos.';
-    contactForm.reportValidity();
-    return;
-  }
-
-  const submitButton = contactForm.querySelector('[type="submit"]');
-  const formData = new FormData(contactForm);
-
-  if (contactStatus) contactStatus.textContent = 'Enviando mensaje...';
-  if (submitButton) submitButton.disabled = true;
-
-  try {
-    const response = await fetch(contactForm.action, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    const payload = await response.json().catch(() => ({}));
-
-    if (!response.ok || !payload.ok) {
-      throw new Error(payload.message || 'No se pudo enviar el mensaje. Intenta de nuevo.');
-    }
-
-    contactForm.reset();
-    if (contactStatus) contactStatus.textContent = 'Gracias. Recibimos tu mensaje y te contactaremos pronto.';
-  } catch (error) {
-    if (contactStatus) contactStatus.textContent = error.message || 'No se pudo enviar el mensaje. Intenta de nuevo.';
-  } finally {
-    if (submitButton) submitButton.disabled = false;
-  }
-});
+// Contact form is handled by js/contact-firebase.js so leads are saved in Firestore.
 
 
 // About modal: opens Casa Glick editorial story from the Nosotros CTA.
