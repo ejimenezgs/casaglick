@@ -1,4 +1,4 @@
-import { db } from "./firebase.js?v=20260717-contact-rules-v25";
+import { db } from "./firebase.js?v=20260717-contact-firebase-v26";
 import {
   addDoc,
   collection,

@@ -1,16 +1,16 @@
 import { initializeApp, getApp, getApps } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
-// Shared Firebase web app configuration used by Casa Glick properties.
-// getApps() prevents creating a second Firebase app if another module already initialized it.
+// Configuracion publica de Firebase compartida con panel.casaglick.com y shop.casaglick.com.
+// getApps() evita crear una segunda instancia si otro modulo ya inicializo Firebase.
 const firebaseConfig = {
-  apiKey: "AIzaSyBxChWYQYJIfdzCe4HL51x8oGixcvLAxJw",
-  authDomain: "drkprty-654ec.firebaseapp.com",
-  projectId: "drkprty-654ec",
-  storageBucket: "drkprty-654ec.firebasestorage.app",
-  messagingSenderId: "17948730429",
-  appId: "1:17948730429:web:917b9d10f70439c54c3654",
-  measurementId: "G-8TZ70MZQFM"
+  apiKey: "AIzaSyBu4DJAxE_mn7MsVZNa-PMu-WNuFNsEPGU",
+  authDomain: "casaglick-439b2.firebaseapp.com",
+  projectId: "casaglick-439b2",
+  storageBucket: "casaglick-439b2.firebasestorage.app",
+  messagingSenderId: "888985882616",
+  appId: "1:888985882616:web:92464a1e63ee74ef3fd00d",
+  measurementId: "G-5HWE12CWPW"
 };
 
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
